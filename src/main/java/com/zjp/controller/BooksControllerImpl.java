@@ -31,7 +31,7 @@ public class BooksControllerImpl implements BooksController{
     }
 
     @Override
-    @RequestMapping(value = "/book/deletes",
+    @RequestMapping(value = "/book/delete",
             produces = "application/json;charset=UTF-8")
     public Integer deletes(HttpServletRequest request) {
         String ids = request.getParameter("ids");
